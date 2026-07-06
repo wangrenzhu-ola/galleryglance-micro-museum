@@ -78,8 +78,8 @@ final class GalleryGlanceMicroMuseumTests: XCTestCase {
     func testPrivacyAndLocaleCopyIsEnglish() {
         XCTAssertEqual(AppCopy.privacyBoundary, "All notes and prompt choices stay private on device; no user-approved data leaves the device.")
         let joined = AppCopy.userVisibleSamples.joined(separator: " ")
-        XCTAssertFalse(joined.contains("登录"))
-        XCTAssertFalse(joined.contains("后端"))
+        XCTAssertFalse(joined.localizedCaseInsensitiveContains("login required"))
+        XCTAssertFalse(joined.localizedCaseInsensitiveContains("backend required"))
         XCTAssertTrue(joined.contains("Premium Themes"))
     }
 }
