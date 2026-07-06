@@ -1,0 +1,26 @@
+{
+  "schema_version": "appfactory.package_goal_summary.v1",
+  "product_name": "GalleryGlance Micro Museum",
+  "worker_status": "in_progress",
+  "applied_skill_ids": [
+    "build-ios-apps",
+    "ios-iap-acceptance",
+    "ios-compliance-acceptance",
+    "swiftui-ui-patterns",
+    "swiftui-liquid-glass",
+    "swiftui-view-refactor",
+    "taste-skill"
+  ],
+  "implemented_with_real_interaction": true,
+  "persistence_implemented": true,
+  "sample_data_only": false,
+  "static_ui_only": false,
+  "build_ios_apps_evidence_refs": [],
+  "iap_evidence_refs": [],
+  "compliance_evidence_refs": [],
+  "skill_evidence_refs": {
+    "skills/build-ios-apps/SKILL.md": "build-ios-apps",
+    "skills/ios-iap-acceptance/SKILL.md": "ios-iap-acceptance",
+    "skills/ios-compliance-acceptance/SKILL.md": "ios-compliance-acceptance"
+  }
+}

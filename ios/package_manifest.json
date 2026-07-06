@@ -1,0 +1,20 @@
+{
+  "schema_version": "appfactory.ios_package_manifest.v1",
+  "product_name": "GalleryGlance Micro Museum",
+  "bundle_id": "com.galleryglance.micromuseum",
+  "version": "0.0.2",
+  "xcodeproj": "GalleryGlanceMicroMuseum.xcodeproj",
+  "scheme": "GalleryGlanceMicroMuseum",
+  "platform": "iOS",
+  "language": "en-US",
+  "required_screens": [
+    "Today Gallery Card",
+    "Look Clue Challenge",
+    "Eye Note Composer",
+    "My Micro Museum",
+    "Premium Themes"
+  ],
+  "persistence": "local JSON in Application Support",
+  "premium_product_id": "galleryglance.micro.museum.premium.themes",
+  "privacy_boundary": "All notes and prompt choices stay private on device; no user-approved data leaves the device."
+}
