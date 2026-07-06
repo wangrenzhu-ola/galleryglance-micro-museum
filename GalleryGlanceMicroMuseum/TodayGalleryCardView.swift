@@ -37,7 +37,7 @@ struct TodayGalleryCardView: View {
                 .font(.largeTitle.bold())
             Text("Turn a short break into a quiet looking ritual: choose one clue, write one Eye Note, and keep building your private Micro Museum.")
                 .font(.body)
-                .foregroundStyle(Color(red: 0.22, green: 0.16, blue: 0.12))
+                .foregroundStyle(GalleryPalette.softInk)
         }
         .accessibilityElement(children: .combine)
     }

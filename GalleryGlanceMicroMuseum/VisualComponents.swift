@@ -1,26 +1,41 @@
 import SwiftUI
 
+enum GalleryPalette {
+    static let ink = Color(red: 0.18, green: 0.15, blue: 0.13)
+    static let softInk = Color(red: 0.25, green: 0.20, blue: 0.17)
+    static let umber = Color(red: 0.42, green: 0.25, blue: 0.16)
+    static let oxide = Color(red: 0.58, green: 0.28, blue: 0.18)
+    static let mutedBlue = Color(red: 0.34, green: 0.45, blue: 0.54)
+    static let sage = Color(red: 0.57, green: 0.62, blue: 0.54)
+    static let linen = Color(red: 0.93, green: 0.88, blue: 0.78)
+    static let warmIvory = Color(red: 0.98, green: 0.93, blue: 0.83)
+    static let galleryGold = Color(red: 0.82, green: 0.63, blue: 0.36)
+    static let warningText = Color(red: 0.47, green: 0.15, blue: 0.10)
+    static let successText = Color(red: 0.18, green: 0.36, blue: 0.28)
+}
+
 struct GalleryBackground: View {
     var body: some View {
         LinearGradient(
             colors: [
-                Color(red: 0.97, green: 0.84, blue: 0.61),
-                Color(red: 0.84, green: 0.72, blue: 0.55),
-                Color(red: 0.34, green: 0.27, blue: 0.22)
+                GalleryPalette.warmIvory,
+                GalleryPalette.linen,
+                GalleryPalette.sage.opacity(0.82),
+                GalleryPalette.umber
             ],
             startPoint: .topLeading,
             endPoint: .bottomTrailing
         )
         .overlay(alignment: .topTrailing) {
             Circle()
-                .fill(Color(red: 1.0, green: 0.93, blue: 0.74).opacity(0.48))
+                .fill(GalleryPalette.galleryGold.opacity(0.20))
                 .frame(width: 240, height: 240)
                 .blur(radius: 12)
                 .offset(x: 70, y: -90)
         }
         .overlay(alignment: .bottomLeading) {
             Circle()
-                .fill(Color(red: 0.42, green: 0.18, blue: 0.12).opacity(0.30))
+                .fill(GalleryPalette.mutedBlue.opacity(0.22))
                 .frame(width: 280, height: 280)
                 .blur(radius: 24)
                 .offset(x: -120, y: 120)
@@ -65,7 +80,7 @@ struct ArtworkFrame: View {
                 .frame(height: 270)
                 .overlay {
                     RoundedRectangle(cornerRadius: 30, style: .continuous)
-                        .stroke(Color(red: 0.42, green: 0.25, blue: 0.12), lineWidth: 10)
+                        .stroke(GalleryPalette.umber, lineWidth: 10)
                         .padding(8)
                 }
                 .overlay(alignment: .center) {
@@ -83,11 +98,11 @@ struct ArtworkFrame: View {
     private var frameGradient: LinearGradient {
         switch artwork.localImageSlot {
         case "courtyard-blue-frame":
-            LinearGradient(colors: [Color(red: 0.29, green: 0.42, blue: 0.60), Color(red: 0.82, green: 0.76, blue: 0.63)], startPoint: .topLeading, endPoint: .bottomTrailing)
+            LinearGradient(colors: [GalleryPalette.mutedBlue, GalleryPalette.linen], startPoint: .topLeading, endPoint: .bottomTrailing)
         case "red-thread-symbol":
-            LinearGradient(colors: [Color(red: 0.90, green: 0.81, blue: 0.66), Color(red: 0.58, green: 0.12, blue: 0.09)], startPoint: .topLeading, endPoint: .bottomTrailing)
+            LinearGradient(colors: [GalleryPalette.linen, GalleryPalette.oxide], startPoint: .topLeading, endPoint: .bottomTrailing)
         default:
-            LinearGradient(colors: [Color(red: 0.96, green: 0.68, blue: 0.34), Color(red: 0.28, green: 0.19, blue: 0.16)], startPoint: .topLeading, endPoint: .bottomTrailing)
+            LinearGradient(colors: [GalleryPalette.galleryGold, GalleryPalette.umber], startPoint: .topLeading, endPoint: .bottomTrailing)
         }
     }
 
@@ -127,13 +142,13 @@ struct MagnifierClueOverlay: View {
                     .font(.headline)
             }
         }
-        .foregroundStyle(Color(red: 0.19, green: 0.13, blue: 0.10))
+        .foregroundStyle(GalleryPalette.ink)
         .padding(.horizontal, 14)
         .padding(.vertical, 10)
-        .background(Color(red: 1.0, green: 0.91, blue: 0.69).opacity(0.92), in: Capsule())
+        .background(GalleryPalette.warmIvory.opacity(0.94), in: Capsule())
         .overlay(alignment: .topTrailing) {
             Circle()
-                .stroke(Color(red: 0.28, green: 0.17, blue: 0.10).opacity(0.55), lineWidth: 2)
+                .stroke(GalleryPalette.umber.opacity(0.45), lineWidth: 2)
                 .frame(width: 48, height: 48)
                 .offset(x: 18, y: -18)
         }
@@ -181,9 +196,9 @@ struct ErrorBanner: View {
             Spacer(minLength: 0)
         }
         .font(.subheadline)
-        .foregroundStyle(Color(red: 0.45, green: 0.12, blue: 0.08))
+        .foregroundStyle(GalleryPalette.warningText)
         .padding(12)
-        .background(Color(red: 1.0, green: 0.88, blue: 0.78), in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+        .background(Color(red: 0.98, green: 0.86, blue: 0.78), in: RoundedRectangle(cornerRadius: 16, style: .continuous))
         .accessibilityElement(children: .combine)
         .accessibilityLabel("Error: \(message)")
     }
@@ -199,9 +214,9 @@ struct SavedBanner: View {
             Spacer(minLength: 0)
         }
         .font(.subheadline)
-        .foregroundStyle(Color(red: 0.16, green: 0.34, blue: 0.20))
+        .foregroundStyle(GalleryPalette.successText)
         .padding(12)
-        .background(Color(red: 0.83, green: 0.94, blue: 0.78), in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+        .background(Color(red: 0.84, green: 0.91, blue: 0.82), in: RoundedRectangle(cornerRadius: 16, style: .continuous))
         .accessibilityElement(children: .combine)
     }
 }

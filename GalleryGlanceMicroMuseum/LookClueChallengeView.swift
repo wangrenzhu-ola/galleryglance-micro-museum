@@ -67,7 +67,7 @@ struct LookClueChallengeView: View {
                 .font(.largeTitle.bold())
             Text("Choose how to look at \(artwork.title). This changes the card's active clue before you write your note.")
                 .font(.body)
-                .foregroundStyle(Color(red: 0.22, green: 0.16, blue: 0.12))
+                .foregroundStyle(GalleryPalette.softInk)
         }
         .accessibilityElement(children: .combine)
     }
@@ -91,10 +91,10 @@ struct LookClueChallengeView: View {
                     }
                     .frame(maxWidth: .infinity, minHeight: 128, alignment: .leading)
                     .padding(14)
-                    .background(clue == selectedClue ? Color(red: 1.0, green: 0.86, blue: 0.58) : Color.white.opacity(0.35), in: RoundedRectangle(cornerRadius: 22, style: .continuous))
+                    .background(clue == selectedClue ? GalleryPalette.warmIvory : Color.white.opacity(0.35), in: RoundedRectangle(cornerRadius: 22, style: .continuous))
                     .overlay {
                         RoundedRectangle(cornerRadius: 22, style: .continuous)
-                            .stroke(clue == selectedClue ? Color(red: 0.52, green: 0.25, blue: 0.12) : .clear, lineWidth: 3)
+                            .stroke(clue == selectedClue ? GalleryPalette.oxide : .clear, lineWidth: 3)
                     }
                 }
                 .buttonStyle(.plain)

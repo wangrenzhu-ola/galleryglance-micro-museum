@@ -32,7 +32,7 @@ struct PremiumThemesView: View {
                 .font(.largeTitle.bold())
             Text("Optional theme shelves add visual variety to your Micro Museum. The core free looking ritual is never locked.")
                 .font(.body)
-                .foregroundStyle(Color(red: 0.22, green: 0.16, blue: 0.12))
+                .foregroundStyle(GalleryPalette.softInk)
         }
     }
 
@@ -43,7 +43,7 @@ struct PremiumThemesView: View {
                     VStack(alignment: .leading, spacing: 10) {
                         Image(systemName: shelf.unlocked || premiumStore.isUnlocked ? "checkmark.seal.fill" : "lock.fill")
                             .font(.title2)
-                            .foregroundStyle(shelf.unlocked || premiumStore.isUnlocked ? Color(red: 0.22, green: 0.40, blue: 0.20) : Color(red: 0.49, green: 0.23, blue: 0.12))
+                            .foregroundStyle(shelf.unlocked || premiumStore.isUnlocked ? GalleryPalette.successText : GalleryPalette.oxide)
                         Text(shelf.name)
                             .font(.headline)
                         Text(shelf.description)
@@ -109,7 +109,7 @@ struct PremiumThemesView: View {
                 }
                 .font(.caption)
                 .buttonStyle(.plain)
-                .foregroundStyle(Color(red: 0.49, green: 0.23, blue: 0.12))
+                .foregroundStyle(GalleryPalette.oxide)
                 .accessibilityLabel("Simulate IAP failure")
             }
             .frame(maxWidth: .infinity, alignment: .leading)

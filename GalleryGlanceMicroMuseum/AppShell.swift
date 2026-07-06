@@ -29,6 +29,6 @@ struct AppShell: View {
             .tabItem { Label("Premium", systemImage: "sparkles.rectangle.stack.fill") }
             .tag(AppTab.premium)
         }
-        .tint(Color(red: 0.49, green: 0.23, blue: 0.12))
+        .tint(GalleryPalette.oxide)
     }
 }

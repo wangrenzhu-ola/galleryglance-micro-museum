@@ -39,7 +39,7 @@ struct MyMicroMuseumView: View {
                 .font(.largeTitle.bold())
             Text("Review your saved looking moments, edit them, or archive older notes without leaving the local device boundary.")
                 .font(.body)
-                .foregroundStyle(Color(red: 0.22, green: 0.16, blue: 0.12))
+                .foregroundStyle(GalleryPalette.softInk)
         }
     }
 
@@ -48,7 +48,7 @@ struct MyMicroMuseumView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Image(systemName: "building.columns.circle")
                     .font(.system(size: 48))
-                    .foregroundStyle(Color(red: 0.49, green: 0.23, blue: 0.12))
+                    .foregroundStyle(GalleryPalette.oxide)
                 Text("Your Micro Museum is quiet for now.")
                     .font(.title2.bold())
                 Text("Create one Eye Note from Today Gallery Card. The saved note will reappear here after you reopen the app.")
@@ -104,7 +104,7 @@ struct MyMicroMuseumView: View {
                         Text(note.observation)
                             .font(.subheadline)
                             .lineLimit(3)
-                            .foregroundStyle(Color(red: 0.19, green: 0.14, blue: 0.11))
+                            .foregroundStyle(GalleryPalette.ink)
                     }
                     Spacer(minLength: 0)
                     Image(systemName: "chevron.right")
@@ -119,15 +119,15 @@ struct MyMicroMuseumView: View {
 
     private func miniArtwork(artwork: ArtworkCard?, clue: ClueType) -> some View {
         RoundedRectangle(cornerRadius: 16, style: .continuous)
-            .fill(Color(red: 0.92, green: 0.72, blue: 0.45))
+            .fill(GalleryPalette.linen)
             .frame(width: 72, height: 86)
             .overlay {
                 Image(systemName: clue.systemImage)
-                    .foregroundStyle(Color(red: 0.42, green: 0.20, blue: 0.10))
+                    .foregroundStyle(GalleryPalette.oxide)
             }
             .overlay {
                 RoundedRectangle(cornerRadius: 16, style: .continuous)
-                    .stroke(Color(red: 0.36, green: 0.22, blue: 0.14), lineWidth: 4)
+                    .stroke(GalleryPalette.umber, lineWidth: 4)
             }
             .accessibilityHidden(true)
     }

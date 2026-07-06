@@ -60,7 +60,7 @@ struct EyeNoteComposerView: View {
                 .font(.largeTitle.bold())
             Text("The helper is local, editable, and optional. Your note is saved only after you confirm.")
                 .font(.body)
-                .foregroundStyle(Color(red: 0.22, green: 0.16, blue: 0.12))
+                .foregroundStyle(GalleryPalette.softInk)
         }
         .accessibilityElement(children: .combine)
     }

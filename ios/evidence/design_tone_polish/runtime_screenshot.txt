@@ -1,0 +1,6 @@
+# Design tone polish runtime screenshot
+Mon Jul  6 16:42:53 UTC 2026
+device=BBB7317F-76C6-4BD5-BF4B-EF6ABAEBA1F8
+app=/Users/wangrenzhu/Library/Developer/Xcode/DerivedData/GalleryGlanceMicroMuseum-gbscpkjkwmcxnrafpyrkwtnvhpnn/Build/Products/Debug-iphonesimulator/GalleryGlanceMicroMuseum.app
+com.galleryglance.micromuseum: 35482
+-rw-r--r--@ 1 wangrenzhu  staff   2.8M Jul  7 00:43 ios/evidence/design_tone_polish/today_gallery_card_polished.png
