@@ -1,0 +1,25 @@
+{
+  "schema_version": "appfactory.xcode_runtime_report.v1",
+  "status": "PASS",
+  "source_repo_path": "/Users/wangrenzhu/work/galleryglance-micro-museum",
+  "xcode_project": "/Users/wangrenzhu/work/galleryglance-micro-museum/GalleryGlanceMicroMuseum.xcodeproj",
+  "scheme": "GalleryGlanceMicroMuseum",
+  "bundle_id": "com.galleryglance.micromuseum",
+  "build_artifact_ref": "DerivedData/Build/Products/Debug-iphonesimulator/GalleryGlanceMicroMuseum.app",
+  "test_xcode_evidence_refs": [
+    "/Users/wangrenzhu/work/galleryglance-micro-museum/ios/evidence/xcodebuild_list.txt",
+    "/Users/wangrenzhu/work/galleryglance-micro-museum/ios/evidence/xcodebuild_build_after_locale_fix.txt",
+    "/Users/wangrenzhu/work/galleryglance-micro-museum/ios/evidence/xcodebuild_test_after_locale_fix.txt",
+    "/Users/wangrenzhu/work/galleryglance-micro-museum/ios/evidence/test_xcode_runtime_success.txt",
+    "/Users/wangrenzhu/work/galleryglance-micro-museum/ios/evidence/test_xcode_today_gallery_card.png",
+    "/Users/wangrenzhu/work/galleryglance-micro-museum/ios/evidence/acceptance_static_check.txt"
+  ],
+  "runtime_markers": [
+    "xcodebuild build: ** BUILD SUCCEEDED **",
+    "xcodebuild test: ** TEST SUCCEEDED **",
+    "simulator install/launch attempted",
+    "ForegroundRunning log marker observed",
+    "simulator screenshot captured"
+  ],
+  "supportive_unit_test_note": "Unit tests support CRUD, persistence, premium, privacy, AI helper, and locale requirements; runtime PASS is based on Xcode build/test plus simulator install/launch/log/screenshot evidence."
+}

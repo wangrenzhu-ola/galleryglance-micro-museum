@@ -1,0 +1,10 @@
+PASS REQ-CRUD-001 create/save/edit/archive/delete reachable
+PASS REQ-PERSIST-001 local JSON persistence and reload
+PASS REQ-VIS-001 museum visual treatment
+PASS REQ-EMPTY-001 empty state starter action
+PASS REQ-ERROR-001 invalid/save/IAP failure copy
+PASS REQ-PRIVACY-001 visible privacy boundary
+PASS REQ-PREMIUM-001 StoreKit 2 purchase/restore/failure
+PASS REQ-AI-001 editable skippable local helper/manual fallback
+PASS Locale en-US UI labels
+PASS Locale CJK scan

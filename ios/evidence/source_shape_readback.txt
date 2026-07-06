@@ -1,0 +1,49 @@
+# Source shape readback
+Mon Jul  6 16:19:35 UTC 2026
+
+./.git/COMMIT_EDITMSG
+./.git/HEAD
+./.git/config
+./.git/description
+./.git/hooks/applypatch-msg.sample
+./.git/hooks/commit-msg.sample
+./.git/hooks/fsmonitor-watchman.sample
+./.git/hooks/post-update.sample
+./.git/hooks/pre-applypatch.sample
+./.git/hooks/pre-commit.sample
+./.git/hooks/pre-merge-commit.sample
+./.git/hooks/pre-push.sample
+./.git/hooks/pre-rebase.sample
+./.git/hooks/pre-receive.sample
+./.git/hooks/prepare-commit-msg.sample
+./.git/hooks/push-to-checkout.sample
+./.git/hooks/sendemail-validate.sample
+./.git/hooks/update.sample
+./.git/index
+./.git/info/exclude
+./.git/logs/HEAD
+./.gitignore
+./Docs/AcceptanceChecklist.md
+./Docs/AppStoreMetadata.md
+./GalleryGlanceMicroMuseum.xcodeproj/project.pbxproj
+./GalleryGlanceMicroMuseum/AppCopy.swift
+./GalleryGlanceMicroMuseum/AppShell.swift
+./GalleryGlanceMicroMuseum/EyeNoteComposerView.swift
+./GalleryGlanceMicroMuseum/GalleryGlanceMicroMuseumApp.swift
+./GalleryGlanceMicroMuseum/GalleryStore.swift
+./GalleryGlanceMicroMuseum/LookClueChallengeView.swift
+./GalleryGlanceMicroMuseum/Models.swift
+./GalleryGlanceMicroMuseum/MyMicroMuseumView.swift
+./GalleryGlanceMicroMuseum/PremiumStore.swift
+./GalleryGlanceMicroMuseum/PremiumThemesView.swift
+./GalleryGlanceMicroMuseum/TodayGalleryCardView.swift
+./GalleryGlanceMicroMuseum/VisualComponents.swift
+./GalleryGlanceMicroMuseumTests/GalleryGlanceMicroMuseumTests.swift
+./README.md
+./ios/evidence/source_shape_readback.txt
+./ios/package_goal_summary.json
+./ios/package_manifest.json
+
+?? ios/evidence/
+
+bd048fc (HEAD -> master) feat: implement GalleryGlance Micro Museum app

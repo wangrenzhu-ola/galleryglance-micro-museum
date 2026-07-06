@@ -1,0 +1,14 @@
+# Test Xcode runtime success readback
+Mon Jul  6 16:30:16 UTC 2026
+source_repo_path=/Users/wangrenzhu/work/galleryglance-micro-museum
+xcodeproj=GalleryGlanceMicroMuseum.xcodeproj
+app=/Users/wangrenzhu/Library/Developer/Xcode/DerivedData/GalleryGlanceMicroMuseum-gbscpkjkwmcxnrafpyrkwtnvhpnn/Build/Products/Debug-iphonesimulator/GalleryGlanceMicroMuseum.app
+device=BBB7317F-76C6-4BD5-BF4B-EF6ABAEBA1F8
+com.galleryglance.micromuseum: 87531
+processes:
+-rw-r--r--@ 1 wangrenzhu  staff   2.7M Jul  7 00:31 ios/evidence/test_xcode_today_gallery_card.png
+Foreground log marker:
+getpwuid_r did not find a match for uid 501
+Timestamp               Ty Process[PID:TID]
+2026-07-07 00:31:05.818 Df locationd[62588:b97b03d] [com.apple.locationd.Core:Core] {"msg":"RBS #AppMonitor Post Application State Change Notification", "notification":ForegroundRunning, "pid":87531, "bundleId":com.galleryglance.micromuseum}
+2026-07-07 00:31:19.322 Df log[88651:0] [com.apple.log:] log run noninteractively, parent: 62425 (launchd_sim), args: 'log' 'show' '--style' 'compact' '--last' '90s' '--predicate' 'eventMessage CONTAINS "ForegroundRunning" AND eventMessage CONTAINS "com.galleryglance.micromuseum"'

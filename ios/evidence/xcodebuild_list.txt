@@ -1,0 +1,17 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -list -project GalleryGlanceMicroMuseum.xcodeproj
+
+Information about project "GalleryGlanceMicroMuseum":
+    Targets:
+        GalleryGlanceMicroMuseum
+        GalleryGlanceMicroMuseumTests
+
+    Build Configurations:
+        Debug
+        Release
+
+    If no build configuration is specified and -scheme is not passed then "Release" is used.
+
+    Schemes:
+        GalleryGlanceMicroMuseum
+

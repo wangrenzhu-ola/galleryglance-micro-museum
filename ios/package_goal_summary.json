@@ -1,7 +1,7 @@
 {
   "schema_version": "appfactory.package_goal_summary.v1",
   "product_name": "GalleryGlance Micro Museum",
-  "worker_status": "in_progress",
+  "worker_status": "pass",
   "applied_skill_ids": [
     "build-ios-apps",
     "ios-iap-acceptance",
@@ -15,12 +15,34 @@
   "persistence_implemented": true,
   "sample_data_only": false,
   "static_ui_only": false,
-  "build_ios_apps_evidence_refs": [],
-  "iap_evidence_refs": [],
-  "compliance_evidence_refs": [],
+  "build_ios_apps_evidence_refs": [
+    "/Users/wangrenzhu/work/galleryglance-micro-museum/ios/evidence/source_shape_readback.txt",
+    "/Users/wangrenzhu/work/galleryglance-micro-museum/ios/evidence/xcodebuild_build_after_locale_fix.txt",
+    "/Users/wangrenzhu/work/galleryglance-micro-museum/ios/evidence/xcodebuild_test_after_locale_fix.txt",
+    "/Users/wangrenzhu/work/galleryglance-micro-museum/ios/evidence/acceptance_static_check.txt"
+  ],
+  "iap_evidence_refs": [
+    "/Users/wangrenzhu/work/galleryglance-micro-museum/GalleryGlanceMicroMuseum/PremiumStore.swift",
+    "/Users/wangrenzhu/work/galleryglance-micro-museum/GalleryGlanceMicroMuseum/PremiumThemesView.swift",
+    "/Users/wangrenzhu/work/galleryglance-micro-museum/ios/evidence/xcodebuild_test_after_locale_fix.txt"
+  ],
+  "compliance_evidence_refs": [
+    "/Users/wangrenzhu/work/galleryglance-micro-museum/GalleryGlanceMicroMuseum/AppCopy.swift",
+    "/Users/wangrenzhu/work/galleryglance-micro-museum/Docs/AppStoreMetadata.md",
+    "/Users/wangrenzhu/work/galleryglance-micro-museum/ios/evidence/acceptance_static_check.txt"
+  ],
   "skill_evidence_refs": {
     "skills/build-ios-apps/SKILL.md": "build-ios-apps",
     "skills/ios-iap-acceptance/SKILL.md": "ios-iap-acceptance",
     "skills/ios-compliance-acceptance/SKILL.md": "ios-compliance-acceptance"
-  }
+  },
+  "test_xcode_evidence_refs": [
+    "/Users/wangrenzhu/work/galleryglance-micro-museum/ios/evidence/xcodebuild_list.txt",
+    "/Users/wangrenzhu/work/galleryglance-micro-museum/ios/evidence/xcodebuild_build_after_locale_fix.txt",
+    "/Users/wangrenzhu/work/galleryglance-micro-museum/ios/evidence/xcodebuild_test_after_locale_fix.txt",
+    "/Users/wangrenzhu/work/galleryglance-micro-museum/ios/evidence/test_xcode_runtime_success.txt",
+    "/Users/wangrenzhu/work/galleryglance-micro-museum/ios/evidence/test_xcode_today_gallery_card.png",
+    "/Users/wangrenzhu/work/galleryglance-micro-museum/ios/evidence/acceptance_static_check.txt"
+  ],
+  "xcode_runtime_result_ref": "/Users/wangrenzhu/work/galleryglance-micro-museum/ios/xcode_runtime_report.json"
 }
